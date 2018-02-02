@@ -1,0 +1,90 @@
+﻿body
+{
+    background-color: #9095ea;
+}
+
+
+.avatar {
+    overflow:hidden;
+    resize: inherit;
+}
+
+#personalinfo{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0;
+    overflow: hidden;
+    background-color: #ded8d8;
+    border-radius:25px;
+}
+
+.subjob {
+    font-size: 1.3rem;
+}
+
+.fullname{
+    font-weight:bold;
+    font-size: 2rem;
+}
+
+.username{
+    font-size: 1.5rem;
+}
+
+#defaulttable{
+    border-radius:25px;
+    float:right;
+    width:85%;
+    height:100%;
+    display:inline-table;
+    background-color:#a3c7ea;
+}
+
+th{
+    font-weight:bold;
+    font-size:1.3rem;
+}
+td{
+    font-size:1.2rem;
+    text-align:center;
+}
+
+#companyheader {
+    background-image: url("loginbg.png");
+}
+
+#companyheader h1{
+    font-size: 3rem;
+    display: inline-block;
+    color: white;
+}
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2222a1;
+}
+
+#navbutton {
+    float: left;
+}
+
+#navbutton a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+#navbutton a:hover {
+    background-color: #4f52ff;
+}
+
+#searchbar {
+    float: right;
+    padding: 14px 16px;
+}
