@@ -4,18 +4,23 @@
     <title>Logged in User Default</title>
     <link rel="stylesheet" href="defaultstyle.css" />
     <meta charset="utf-8" />
+    <script src="defaultScript.js"></script>
 </head>
 <body>
     <div id="companyheader"><h1><b>NZ Connections</b></h1></div>
-    <ul id="navbar">
-        <li id="navbutton"><a href="default.html">Home</a></li>
-        <li id="navbutton"><a href="news.asp">About</a></li>
-        <li id="navbutton"><a href="contact.asp">Contact</a></li>
-        <li id="searchbar"><input type="text" placeholder="Search..."></li>
-    </ul>
+    <div class="topnav">
+        <a class="active" href="default.html">Home</a>
+        <a href="#about">About</a>
+        <a href="messenger.html">Message Us</a>
+        <div class="search-container">
+            <form action="javascript:;" onsubmit="filter()">
+                <input type="text" id="searchInput" placeholder="Search..." name="search">
+            </form>
+        </div>
+    </div>
     <div>
         <!----<span><img src="avatarstock.png" alt="Avatar" class="avatar"></span>-->
-        <table id="defaulttable">
+        <table id="myTable">
             <tr>
                 <th>Vehicle</th>
                 <th>Insurance</th>
@@ -63,18 +68,16 @@
     </div>
     <div>
         <ul id="personalinfo">
-            <li class="fullname">John Smith</li>
-            <li class="username">@jsmith</li>
+            <li id="fullname">John Smith</li>
+            <li id="username">@jsmith</li>
             <li>-----------------------------</li>
-            <li class="username"><b>Current Jobs:</b></li>
+            <li class="subjob"><b>Current Jobs:</b></li>
             <li class="subjob">Job1</li>
             <li class="subjob">Job2</li>
             <li class="subjob">Job3</li>
             <li class="subjob">Job4</li>
             <li class="subjob">Job5</li>
             <li>-----------------------------</li>
-            <li><a href="/settings">Settings</a></li>
-            <li><a href="/help">Help</a></li>
             <li><a href="login.html">Signout</a></li>
         </ul>
     </div>
