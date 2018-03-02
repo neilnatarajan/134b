@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Sign Up Page</title>
+		<script src="signupScript.js"></script>
 	</head>
 
 	<style type="text/css">
@@ -45,18 +46,18 @@
 			<img class = "myImg" src= "waves.jpg">
 			<h1 class= "pageHeader">Sign Up</h1>
 			<p class="pageHeader">Welcome!</p>
-			<div class= "forms">
-				<form>
+			<div class= "forms" id="signupForm">
+				<form action="javascript:;" onsubmit="signup()">
 					First name:<br>
-					<input type="text" name="firstname"><br>
-					Last name:<br>
-					<input type="text" name="lastname"><br>
-					Address:<br>
-					<input type="text" name="address"><br>
+					<input type="text" name="firstname" id="firstname"><br>
+					Last name:<br></input>
+					<input type="text" name="lastname" id="lastname"><br>
+					Address:<br></input>
+					<input type="text" name="address" id="address"><br>
 					Email:<br>
-					<input type="text" name="email"><br>
+					<input type="text" name="email" id="email"><br>
 					Insurance Info:<br>
-					<input type="text" name="insurance"><br>
+					<input type="text" name="insurance" id="insurance"><br>
 					Register As:<br>
 					<input type="radio" name="userType" value="Driver" checked> Driver<br>
 					<input type="radio" name="userType" value="Mechanic"> Mechanic<br>
