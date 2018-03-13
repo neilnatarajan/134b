@@ -1,0 +1,42 @@
+import React from 'react';
+
+class AboutPage extends React.Component {
+  render() {
+    return (
+      <div id = "messageBODY">
+      <div id="companyheader"><h1><b>NZ Connections</b></h1></div>
+      <div class="topnav">
+          <a href="default.html">Home</a>
+          <a href="#about">About</a>
+          <a class ="active" href="messenger.html">Message Us</a>
+          <div class="search-container">
+              <form action="default.html">
+                  <input type="text" id="searchInput" onkeyup="filter()" placeholder="Search..." name="search"/>
+              </form>
+          </div>
+      </div>
+      <div id="chat-container">
+          <div class="container">
+              <img src="avatarstock.png" alt="Avatar"/>
+              <p>Hello! If you have any questions, free to ask our customer service chat.</p>
+              <span class="time-right">2/16/2018 11:00</span>
+          </div>
+  
+          <div class="container darker">
+              <img src="avatarstock.png" alt="Avatar" class="right"/>
+              <p>Hello, I do have some questions!</p>
+              <span class="time-left">2/16/2018 11:01</span>
+          </div>
+  
+          <div class="chatbox">
+              <form action="javascript:;" onsubmit="sendMessage()" autocomplete="off">
+                  <input type="text" id="chat-input" placeholder="Your message here..." name="message"/>
+              </form>
+          </div>
+      </div>
+  </div>
+    );
+  }
+}
+
+export default AboutPage;
